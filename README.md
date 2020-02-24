@@ -13,7 +13,7 @@ Script to read playing card images in the works. Part of a larger blackjack simu
 Estimated checklist for completion:
 
 - [ ] Reading and displaying the test image using `opencv`.
-- [ ] Read the value of all cards. May need a better camera (?).
+- [ ] Read the value of cards on a table. May need a better camera (?).
 - [ ] Showing card values back thru command line in rpi program.
-- [ ] Building a static card reader table or auto detection of card system, whichever proves easier.
-- [ ] Convert card-reading to real-time. Not yet sure the limitations of this with rpi camera.
+- [ ] Building a static (or dynamic, if easier) card detecting and reading system.
+- [ ] Convert card-reading to real-time video using [camshift](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_video/py_meanshift/py_meanshift.html#meanshift) to follow cards on the table. Not yet sure of the limitations.

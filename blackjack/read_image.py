@@ -8,15 +8,21 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 
 Find the sum of all the multiples of 3 or 5 below 1000.
 """
-    
-    
-    
-import numpy as np
-import cv2
+
+
+#import numpy as np
+import cv2 as cv
 
 # Load an color image
-img = cv2.imread('img008.jpg')
+cv.namedWindow("image")
+img = cv.imread('data/img008.jpg')
+cv.imshow("image",img)
 
-cv2.imshow('test',img)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+cv.waitKey(1000) # 5 sec delay before image window closes
+cv.destroyWindow("image")
+
+
+print('thats half the budget man')
+
+print(cv.__version__)
+
